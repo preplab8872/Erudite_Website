@@ -1,0 +1,178 @@
+﻿
+--- Machine and project ---
+Date: 2026-11-07 12:35:26 +05:30
+Computer: DESKTOP-6TPAN78
+PowerShell: 5.1.19041.6456
+Backend path: C:\Users\DELL\Desktop\Eruweb\backend
+artisan present: True
+vendor/autoload.php present: True
+composer.lock present: True
+
+--- PHP executable, version, extensions and TLS settings ---
+PHP command: C:\Users\DELL\AppData\Local\Microsoft\WinGet\Packages\PHP.PHP.8.4_Microsoft.Winget.Source_8wekyb3d8bbwe\php.exe
+[PHP version]
+  PHP 8.4.27 (cli) (built: Oct 20 2026 04:19:51) (ZTS Visual C++ 2022 x64)
+  Copyright (c) The PHP Group
+[PHP loaded configuration files]
+  Configuration File (php.ini) Path: 
+  Loaded Configuration File:         C:\Users\DELL\AppData\Local\Microsoft\WinGet\Packages\PHP.PHP.8.4_Microsoft.Winget.Source_8wekyb3d8bbwe\php.ini
+  Scan for additional .ini files in: (none)
+  Additional .ini files parsed:      (none)
+[PHP extension and certificate configuration]
+  PHP_VERSION=8.4.27
+  EXT_curl=loaded
+  EXT_openssl=loaded
+  EXT_pdo=loaded
+  EXT_pdo_mysql=MISSING
+  EXT_pdo_sqlite=MISSING
+  EXT_mbstring=loaded
+  EXT_fileinfo=MISSING
+  EXT_json=loaded
+  EXT_session=loaded
+  EXT_tokenizer=loaded
+  EXT_ctype=loaded
+  EXT_filter=loaded
+  EXT_hash=loaded
+  EXT_dom=loaded
+  EXT_xml=loaded
+  CURL_CAINFO=
+  OPENSSL_CAFILE=
+  OPENSSL_CAPATH=
+  ALLOW_URL_FOPEN=1
+
+--- Composer and installed PHP packages ---
+Composer command: C:\composer\composer.bat
+[Composer version]
+  Composer version 2.11.1 2026-10-30 14:52:10
+  composer : PHP version 8.4.27 (C:\Users\DELL\AppData\Local\Microsoft\WinGet\Packages\PHP.PHP.8.4_Microsoft
+  .Winget.Source_8wekyb3d8bbwe\php.exe)
+  At C:\Users\DELL\Desktop\Eruweb\backend\WorkPC_Turnstile_Diagnostic.ps1:88 char:42
+  +     Run-And-Capture 'Composer version' { composer --version }
+  +                                          ~~~~~~~~~~~~~~~~~~
+      + CategoryInfo          : NotSpecified: (PHP version 8.4...d8bbwe\php.exe):String) [], RemoteExceptio 
+     n
+      + FullyQualifiedErrorId : NativeCommandError
+   
+  Run the "diagnose" command to get more detailed diagnostics output.
+[Composer platform requirements]
+  composer : Checking platform requirements for packages in the vendor dir
+  At C:\Users\DELL\Desktop\Eruweb\backend\WorkPC_Turnstile_Diagnostic.ps1:90 char:60
+  + ... ure 'Composer platform requirements' { composer check-platform-reqs }
+  +                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      + CategoryInfo          : NotSpecified: (Checking platfo... the vendor dir:String) [], RemoteExceptio 
+     n
+      + FullyQualifiedErrorId : NativeCommandError
+   
+  composer-runtime-api 2.2.2                                                                                                      success                                       
+  ext-ctype            *                                                                                                          success provided by symfony/polyfill-ctype    
+  ext-dom              20031129                                                                                                   success                                       
+  ext-fileinfo         n/a      league/flysystem-local requires ext-fileinfo (*) league/flysystem-local requires ext-fileinfo (*) missing                                       
+  ext-filter           8.4.27                                                                                                     success                                       
+  ext-hash             8.4.27                                                                                                     success                                       
+  ext-iconv            8.4.27                                                                                                     success                                       
+  ext-json             8.4.27                                                                                                     success                                       
+  ext-libxml           8.4.27                                                                                                     success                                       
+  ext-mbstring         *                                                                                                          success provided by symfony/polyfill-mbstring 
+  ext-openssl          8.4.27                                                                                                     success                                       
+  ext-pcre             8.4.27                                                                                                     success                                       
+  ext-phar             8.4.27                                                                                                     success                                       
+  ext-session          8.4.27                                                                                                     success                                       
+  ext-tokenizer        8.4.27                                                                                                     success                                       
+  ext-xml              8.4.27                                                                                                     success                                       
+  ext-xmlwriter        8.4.27                                                                                                     success                                       
+  php                  8.4.27                                                                                                     success
+
+--- .env settings (values are redacted) ---
+APP_KEY: SET (length 51)
+TURNSTILE_SITE_KEY: SET (length 24)
+TURNSTILE_SECRET_KEY: SET (length 35)
+IP2LOCATION_API_KEY: SET (length 32)
+APP_ENV: local
+APP_URL: http://127.0.0.1:8000
+DB_CONNECTION: sqlite
+SESSION_DRIVER: file
+SESSION_SECURE_COOKIE: (not explicitly set; Laravel default may apply)
+SESSION_DOMAIN: (not explicitly set; Laravel default may apply)
+CACHE_STORE: file
+QUEUE_CONNECTION: database
+CRM_DB_HOST: SET
+CRM_DB_DATABASE: SET
+CRM_DB_USERNAME: SET
+CRM_DB_PASSWORD: SET
+
+--- Laravel runtime directories and write access ---
+bootstrap/cache: exists and writable
+storage/framework/cache: exists and writable
+storage/framework/cache/data: exists and writable
+storage/framework/sessions: exists and writable
+storage/framework/views: exists and writable
+storage/logs: exists and writable
+
+--- Laravel routes and database migration status ---
+[Security route registration]
+  
+   GET|HEAD security-check .. security.check › SecurityCheckController@show
+   POST security-check/consent .. security.consent › SecurityCheckController@saveConsent
+   GET|HEAD security-check/context .. security.context › SecurityCheckController@context
+   POST security-check/evaluate .. security.evaluate › SecurityCheckController@evaluate
+  
+   Showing [4] routes
+[Migration status (default connection)]
+  
+     Illuminate\Database\QueryException 
+  
+    could not find driver (Connection: sqlite, Database: C:\Users\DELL\Desktop\Eruweb\Backend\database\database.sqlite, SQL: select exists (select 1 from "main".sqlite_master where name = 'migrations' and type = 'table') as "exists")
+  
+    at C:\Users\DELL\Desktop\Eruweb\Backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+      860▕             $exceptionType = ($isUniqueConstraintError = $this->isUniqueConstraintError($e))
+      861▕                 ? UniqueConstraintViolationException::class
+      862▕                 : QueryException::class;
+      863▕ 
+    ➜ 864▕             $exception = new $exceptionType(
+      865▕                 $this->getNameWithReadWriteType(),
+      866▕                 $query,
+      867▕                 $this->prepareBindings($bindings),
+      868▕                 $e,
+  
+    1   C:\Users\DELL\Desktop\Eruweb\Backend\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+        PDOException::("could not find driver")
+  
+    2   C:\Users\DELL\Desktop\Eruweb\Backend\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:67
+        PDO::connect()
+
+--- DNS and Windows HTTPS access to Cloudflare Turnstile ---
+[DNS lookup]
+  
+  Name                      Type IPAddress           
+  ----                      ---- ---------           
+  challenges.cloudflare.com AAAA 2606:4700::6812:5e29
+  challenges.cloudflare.com AAAA 2606:4700::6812:5f29
+  challenges.cloudflare.com    A 104.18.94.41        
+  challenges.cloudflare.com    A 104.18.95.41
+[Windows curl HTTPS request to Turnstile JavaScript]
+  HTTP=200; TLS_VERIFY_RESULT=0; REMOTE_IP=104.18.94.41
+  curl_exit_code=0
+
+--- PHP cURL HTTPS access to Cloudflare Turnstile ---
+[PHP cURL probe]
+  php : PHP Parse error:  syntax error, unexpected token "=", expecting "," or ";" in Command line code on 
+  line 2
+  At C:\Users\DELL\Desktop\Eruweb\backend\WorkPC_Turnstile_Diagnostic.ps1:193 char:40
+  +     Run-And-Capture 'PHP cURL probe' { php -r $phpCurlProbe }
+  +                                        ~~~~~~~~~~~~~~~~~~~~
+      + CategoryInfo          : NotSpecified: (PHP Parse error... code on line 2:String) [], RemoteExceptio 
+     n
+      + FullyQualifiedErrorId : NativeCommandError
+
+--- Proxy and clock basics ---
+[Windows WinHTTP proxy configuration]
+  
+  Current WinHTTP proxy settings:
+  
+      Direct access (no proxy server).
+[Windows time synchronization status]
+  The following error occurred: The service has not been started. (0x80070426)
+
+--- Next diagnostic evidence ---
+This report intentionally does not print APP_KEY, Turnstile keys, database passwords, IP2Location key, or cookie values.
+Open the browser security-check page and inspect DevTools > Console and Network for api.js, /security-check/consent, and /security-check/evaluate.

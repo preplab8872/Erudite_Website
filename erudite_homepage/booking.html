@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#f7f0d9" name="theme-color" />
+  <meta content="Request a consultation with Erudite." name="description" />
+  <title>Book a Consultation · Erudite</title>
+  <link href="style.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a aria-label="Erudite homepage" class="brand" href="index.html">
+        <span aria-hidden="true" class="brand-mark"><span>E</span></span>
+        <span class="brand-copy">
+          <span class="brand-name">ERUDITE</span>
+          <span class="brand-descriptor">LEARN WITH INTENT</span>
+        </span>
+      </a>
+
+      <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle"
+        type="button">
+        <span aria-hidden="true" class="menu-toggle-lines">
+          <span></span><span></span>
+        </span>
+      </button>
+
+      <nav aria-label="Primary navigation" class="primary-navigation" id="primary-navigation">
+        <a class="nav-home" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+
+        <div class="nav-group">
+          <button aria-controls="menu-courses-all" aria-expanded="false" class="nav-trigger" type="button">
+            All Courses <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-menu" id="menu-courses-all">
+  <div class="nav-menu-title">Browse sections</div>
+  <a href="index.html?open_section=MBA_IN_INDIA">MBA in India</a>
+  <a href="index.html?open_section=UG_COLLEGE_TEST">UG College Test</a>
+  <a href="index.html?open_section=STUDY_ABROAD">Study Abroad</a>
+</div>
+        </div>
+
+        <div class="nav-group">
+          <button aria-controls="menu-mba" aria-expanded="false" class="nav-trigger" type="button">
+            MBA in India <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-menu" id="menu-mba">
+  <div class="nav-menu-title">MBA in India</div>
+  <div class="form-manager-menu-items" data-form-manager-menu="MBA_IN_INDIA">
+    <span class="form-manager-menu-message">Open to load available forms…</span>
+  </div>
+</div>
+        </div>
+
+        <div class="nav-group">
+          <button aria-controls="menu-ug" aria-expanded="false" class="nav-trigger" type="button">
+            UG College Test <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-menu" id="menu-ug">
+  <div class="nav-menu-title">UG College Test</div>
+  <div class="form-manager-menu-items" data-form-manager-menu="UG_COLLEGE_TEST">
+    <span class="form-manager-menu-message">Open to load available forms…</span>
+  </div>
+</div>
+        </div>
+
+        <div class="nav-group">
+          <button aria-controls="menu-abroad" aria-expanded="false" class="nav-trigger" type="button">
+            Study Abroad <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-menu" id="menu-abroad">
+  <div class="nav-menu-title">Study Abroad</div>
+  <div class="form-manager-menu-items" data-form-manager-menu="STUDY_ABROAD">
+    <span class="form-manager-menu-message">Open to load available forms…</span>
+  </div>
+</div>
+        </div>
+
+        <a href="results.html">Our Results</a>
+        <a href="rtp.html">RTP</a>
+        <a href="resources.html">Resources</a>
+        <a class="nav-daily" href="daily-question.html">Daily Question <span aria-hidden="true">↗</span></a>
+
+        <div class="nav-group">
+          <button aria-controls="menu-predictors" aria-expanded="false" class="nav-trigger" type="button">
+            Predictors <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-menu nav-menu-right" id="menu-predictors">
+            <a class="nav-menu-title" href="cat-predictor.html">CAT Predictor <span>↗</span></a>
+            <a href="bschool-predictor.html">B-school Predictor <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <button aria-label="Switch to dark mode" class="theme-toggle" title="Toggle colour theme" type="button">
+          <span aria-hidden="true">◐</span>
+          <span class="theme-toggle-label">Dark</span>
+        </button>
+
+        <a aria-current="page" class="nav-login" href="booking.html">Book now <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="login-stage booking-stage">
+
+      <div class="login-editorial">
+        <p class="eyebrow"><span class="eyebrow-rule"></span> ERUDITE / BOOKING</p>
+
+        <h1>Make your next step <span class="headline-accent">official.</span></h1>
+
+        <p>
+          Share a few details and our team will get in touch
+          to understand how we can help with your preparation.
+        </p>
+
+        <div class="login-signpost">
+          <span>YOUR DETAILS</span>
+          <span>EMAIL VERIFY</span>
+          <span>SUBMIT</span>
+        </div>
+      </div>
+
+      <div class="login-panel booking-panel">
+        <p class="eyebrow"><span class="eyebrow-rule"></span> BOOKING REQUEST</p>
+
+        <h2>Request a consultation.</h2>
+
+        <p class="login-panel-intro">
+          Enter your contact details below. Email verification is required before submission.
+        </p>
+
+        <form id="booking-form" class="tool-form" novalidate>
+
+          <label for="booking-city">
+            City
+            <input id="booking-city" name="city" type="text" maxlength="100" autocomplete="address-level2"
+              placeholder="Enter your city" required>
+          </label>
+
+          <label for="booking-name">
+            Name
+            <input id="booking-name" name="name" type="text" maxlength="150" autocomplete="name"
+              placeholder="Enter your full name" required>
+          </label>
+
+          <label for="booking-email">
+            Email
+            <input id="booking-email" name="email" type="email" maxlength="254" autocomplete="email"
+              placeholder="Enter your email address" required>
+          </label>
+
+          <label for="booking-phone">
+            Phone
+            <input id="booking-phone" name="phone" type="tel" maxlength="20" minlength="7"
+              pattern="\+?[0-9\s().-]{7,20}" autocomplete="tel" placeholder="Enter your phone number" required>
+          </label>
+
+          <button class="button button-primary" id="booking-send-otp" type="button">
+            Send email OTP
+          </button>
+
+          <label id="booking-otp-group" for="booking-otp" hidden>
+            Email verification code
+            <input id="booking-otp" name="otp" type="text" inputmode="numeric" autocomplete="one-time-code"
+              maxlength="6" pattern="[0-9]{6}" placeholder="Enter the 6-digit code" disabled>
+          </label>
+
+          <button class="button button-primary" id="booking-submit" type="submit">
+            Submit booking request
+          </button>
+
+          <p class="form-message" id="booking-feedback" role="status" aria-live="polite" hidden></p>
+
+        </form>
+
+        <p class="login-smallprint">
+          Your details are submitted through Erudite's booking module after email OTP verification.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand-column">
+        <a aria-label="Erudite homepage" class="brand brand-footer" href="index.html">
+          <span aria-hidden="true" class="brand-mark"><span>E</span></span>
+          <span class="brand-copy">
+            <span class="brand-name">ERUDITE</span>
+            <span class="brand-descriptor">LEARN WITH INTENT</span>
+          </span>
+        </a>
+        <p>Thoughtful preparation for competitive exams, with students at the centre.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Explore</h2>
+        <a href="about.html">About Us</a>
+        <a href="index.html?open_section=MBA_IN_INDIA">MBA in India</a>
+        <a href="index.html?open_section=UG_COLLEGE_TEST">UG College Test</a>
+        <a href="index.html?open_section=STUDY_ABROAD">Study Abroad</a>
+        <a href="results.html">Our Results</a>
+        <a href="rtp.html">RTP</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Student tools</h2>
+        <a href="daily-question.html">Daily Question</a>
+        <a href="cat-predictor.html">CAT Predictor</a>
+        <a href="bschool-predictor.html">B-school Predictor</a>
+        <a href="resources.html">Resources</a>
+        <a href="booking.html">Book now</a>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h2>Get in touch</h2>
+        <a href="tel:+919007537856">+91 90075 37856</a>
+        <a href="mailto:erudite@erudite.in">erudite@erudite.in</a>
+        <address>
+          2nd floor, Mansarovar Apartment,<br />
+          3B Camac Street, Kolkata,<br />
+          West Bengal 700016
+        </address>
+        <a href="mailto:erudite@erudite.in">Email Erudite ↗</a>
+        <a href="about.html#privacy-note">Privacy policy ↗</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2026</span> Erudite Career Enablers LLP</span>
+      <a href="index.html">Home ↗</a>
+      <span class="footer-note">Laravel-served booking · email verification required</span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const form = document.querySelector('#booking-form');
+      if (!form) return;
+
+      const cityInput = form.elements.namedItem('city');
+      const nameInput = form.elements.namedItem('name');
+      const emailInput = form.elements.namedItem('email');
+      const phoneInput = form.elements.namedItem('phone');
+      const otpInput = form.elements.namedItem('otp');
+
+      const otpGroup = document.querySelector('#booking-otp-group');
+      const sendOtpButton = document.querySelector('#booking-send-otp');
+      const submitButton = document.querySelector('#booking-submit');
+      const feedback = document.querySelector('#booking-feedback');
+
+      let otpRequestedFor = '';
+
+      function showMessage(message, isError = false) {
+        feedback.textContent = message;
+        feedback.hidden = false;
+        feedback.classList.toggle('is-error', isError);
+      }
+
+      async function postBookingJson(url, payload) {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || result.success === false) {
+          const validationMessage = result.errors
+            ? Object.values(result.errors).flat().join(' ')
+            : result.message;
+
+          throw new Error(
+            validationMessage || 'The request could not be completed.'
+          );
+        }
+
+        return result;
+      }
+
+      function resetOtpState() {
+        otpRequestedFor = '';
+        otpInput.value = '';
+        otpInput.disabled = true;
+        otpInput.required = false;
+        otpGroup.hidden = true;
+      }
+
+      emailInput.addEventListener('input', () => {
+        const currentEmail = emailInput.value.trim().toLowerCase();
+
+        if (otpRequestedFor && currentEmail !== otpRequestedFor) {
+          resetOtpState();
+          showMessage('The email address changed. Send a new OTP for this email address.');
+        }
+      });
+
+      sendOtpButton.addEventListener('click', async () => {
+        emailInput.value = emailInput.value.trim().toLowerCase();
+
+        if (!emailInput.reportValidity()) return;
+
+        sendOtpButton.disabled = true;
+        sendOtpButton.textContent = 'Sending…';
+
+        try {
+          const result = await postBookingJson(
+            '/api/booking/otp/send',
+            {
+              recipient: emailInput.value
+            }
+          );
+
+          otpRequestedFor = emailInput.value;
+          otpGroup.hidden = false;
+          otpInput.disabled = false;
+          otpInput.required = true;
+
+          showMessage(result.message || 'OTP sent. Check your email.');
+          otpInput.focus();
+
+        } catch (error) {
+          showMessage(error.message, true);
+
+        } finally {
+          sendOtpButton.disabled = false;
+          sendOtpButton.textContent = 'Send email OTP';
+        }
+      });
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) return;
+
+        const email = emailInput.value.trim().toLowerCase();
+
+        if (
+          !otpRequestedFor ||
+          otpRequestedFor !== email ||
+          otpInput.disabled
+        ) {
+          showMessage('Send an email OTP before submitting your booking request.', true);
+          sendOtpButton.focus();
+          return;
+        }
+
+        const payload = {
+          city: cityInput.value.trim(),
+          name: nameInput.value.trim(),
+          email: email,
+          phone: phoneInput.value.trim(),
+          otp: otpInput.value.trim()
+        };
+
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting…';
+
+        try {
+          const result = await postBookingJson(
+            '/api/booking/confirm',
+            payload
+          );
+
+          form.reset();
+          resetOtpState();
+
+          showMessage(
+            result.message || 'Booking request received successfully.'
+          );
+
+        } catch (error) {
+          showMessage(error.message, true);
+
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Submit booking request';
+        }
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

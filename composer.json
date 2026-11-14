@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ryangjchandler/laravel-cloudflare-turnstile": "^3.0"
+    }
+}
